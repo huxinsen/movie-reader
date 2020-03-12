@@ -1,0 +1,4 @@
+<import src="template/movie-grid/movie-grid" />
+<view class="movies-more">
+  <template is="movieGrid" data="{{movies}}"></template>
+</view>

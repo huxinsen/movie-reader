@@ -1,0 +1,61 @@
+@import 'template/movie-list/movie-list.wxss';
+@import 'movies-more/template/movie-grid/movie-grid.wxss';
+
+.movies {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.movies__search {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 30rpx;
+  background-color: #eee;
+}
+
+.movies__search-input {
+  flex: 1;
+  margin: 0 20rpx;
+  font-size: 14px;
+}
+
+.movies__search-placeholder {
+  font-size: 14px;
+}
+
+.movies__search-cancel {
+  width: 15px;
+  height: 15px;
+}
+
+.movies__wrapper {
+  flex: 1;
+  overflow: auto;
+}
+
+.movies__search-results {
+  height: 100%;
+  overflow: auto;
+  padding: 30rpx;
+}
+
+.movies__main {
+  height: 100%;
+  overflow: auto;
+  background-color: #eee;
+}
+
+.movies__section {
+  margin-bottom: 30rpx;
+}
+
+.movies__no-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 14px;
+  color: #666;
+}

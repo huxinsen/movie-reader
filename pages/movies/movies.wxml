@@ -1,0 +1,31 @@
+<import src="template/movie-list/movie-list" />
+<import src="movies-more/template/movie-grid/movie-grid" />
+<view class="movies">
+  <view class="movies__search">
+    <icon type="search" size="15" color="#405f80"></icon>
+    <input class="movies__search-input" value="{{inputValue}}" placeholder="肖申克的救赎、人" placeholder-class="movies__search-placeholder" bindfocus="onSearchFocus" bindconfirm="onSearchConfirm"></input>
+    <image wx:if="{{isSearching}}" catchtap="onSearchCancel" class="movies__search-cancel" src="/images/icon/cancel.png"></image>
+  </view>
+  <view class="movies__wrapper">
+    <view wx:if="{{isSearching}}" class="movies__search-results">
+      <template is="movieGrid" data="{{...searchResults}}"></template>
+      <view wx:if="{{searchResults.movies.length === 0}}" class="movies__no-data">
+        <text>暂无数据</text>
+      </view>
+    </view>
+    <scroll-view wx:else class="movies__main" scroll-y="true">
+      <view wx:if="{{inTheaters}}" class="movies__section">
+        <template is="movie-list" data="{{...inTheaters}}"></template>
+      </view>
+      <view wx:if="{{comingSoon}}" class="movies__section">
+        <template is="movie-list" data="{{...comingSoon}}"></template>
+      </view>
+      <view wx:if="{{top250}}" class="movies__section">
+        <template is="movie-list" data="{{...top250}}"></template>
+      </view>
+      <view wx:if="{{!inTheaters && !comingSoon && !top250}}" class="movies__no-data">
+        <text>暂无数据</text>
+      </view>
+    </scroll-view>
+  </view>
+</view>

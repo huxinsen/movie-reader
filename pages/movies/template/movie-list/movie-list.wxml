@@ -1,0 +1,17 @@
+<import src="../movie/movie" />
+<template name="movie-list">
+  <view class="movie-list">
+    <view class="movie-list__header">
+      <text class="movie-list__title">{{category}}</text>
+      <view class="movie-list__more" catchtap="onMoreTap" data-category="{{category}}">
+        更多
+        <text class="movie-list__more-icon">></text>
+      </view>
+    </view>
+    <view class="movie-list__movies">
+      <view wx:for="{{movies}}" wx:for-item="movie" wx:key="id">
+        <template is="movie" data="{{...movie}}"></template>
+      </view>
+    </view>
+  </view>
+</template>

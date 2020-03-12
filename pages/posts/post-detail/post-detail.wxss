@@ -1,0 +1,85 @@
+.post-detail-head {
+  position: relative;
+  height: 400rpx;
+}
+
+.post-detail-head__image {
+  width: 100%;
+  height: 100%;
+}
+
+.post-detail-head__music-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  transform: translate(-50%, -50%);
+}
+
+.post-detail-body {
+  padding: 20rpx;
+}
+
+.post-detail-author {
+  display: flex;
+  align-items: center;
+}
+
+.post-detail-author__avatar {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+}
+
+.post-detail-author__name {
+  margin-right: 20rpx;
+  font-size: 16px;
+  color: #666;
+}
+
+.post-detail-author__publish-time {
+  font-size: 14px;
+  color: #666;
+}
+
+.post-detail-title {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  font-weight: bold;
+}
+
+.post-detail-action {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.post-detail-action__inner {
+  display: flex;
+}
+
+.post-detail-action__icon {
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 40rpx;
+}
+
+.post-detail-action::before {
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  width: 100%;
+  height: 0;
+  border-top: 1px solid #eee;
+  content: '';
+}
+
+.post-detail-content {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  font-size: 14px;
+  color: #333;
+}

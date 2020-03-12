@@ -1,0 +1,25 @@
+<template name="postItem">
+  <view class="post-item">
+    <view class="post-item-author">
+      <image class="post-item-author__avatar" src="{{avatar}}"></image>
+      <text class="post-item-author__date">{{date}}</text>
+    </view>
+    <view class="post-item-title">
+      <text class="post-item-title__inner">{{title}}</text>
+    </view>
+    <image class="post-item-image" src="{{imgSrc}}"></image>
+    <view class="post-item-content">
+      <text class="post-item-content__inner">{{content}}</text>
+    </view>
+    <view class="post-item-info">
+      <view class="post-item-info-item">
+        <image class="post-item-info-item__icon" src="/images/icon/star-hollow.png"></image>
+        <text class="post-item-info-item__text">{{favorites}}</text>
+      </view>
+      <view class="post-item-info-item">
+        <image class="post-item-info-item__icon" src="/images/icon/view.png"></image>
+        <text class="post-item-info-item__text">{{reading}}</text>
+      </view>
+    </view>
+  </view>
+</template>

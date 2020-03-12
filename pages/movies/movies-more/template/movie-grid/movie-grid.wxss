@@ -1,0 +1,15 @@
+@import '../../../template/movie/movie.wxss';
+
+.movie-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.movie-grid__item {
+  margin-bottom: 30rpx;
+}
+
+.movie-grid__placeholder {
+  width: 200rpx;
+}

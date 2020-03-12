@@ -1,0 +1,31 @@
+@import '../movie/movie.wxss';
+
+.movie-list {
+  padding: 30rpx;
+  background-color: #fff;
+}
+
+.movie-list__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+  font-size: 14px;
+  color: #666;
+}
+
+.movie-list__more {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #405f80;
+}
+
+.movie-list__more-icon {
+  margin-left: 4px;
+  font-size: 14px;
+}
+
+.movie-list__movies {
+  display: flex;
+  justify-content: space-between;
+}

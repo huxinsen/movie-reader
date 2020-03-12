@@ -1,0 +1,8 @@
+<import src="../rating/rating" />
+<template name="movie">
+  <view class="movie" catchtap="onMovieTap" data-id="{{id}}">
+    <image class="movie__poster" src="{{imgURL}}"></image>
+    <text class="movie__name">{{title}}</text>
+    <template is="rating" data="{{rating}}"></template>
+  </view>
+</template>

@@ -1,0 +1,59 @@
+<import src="../template/rating/rating" />
+<view class="movie-detail">
+  <view class="detail-top">
+    <view class="detail-top__bg-wrapper">
+      <image class="detail-top__bg" src="{{image}}" mode="aspectFill"></image>
+    </view>
+    <view class="detail-top__inner">
+      <text class="detail-top__title">{{title}}</text>
+      <text class="detail-top__country-year">{{country}} · {{year}}</text>
+      <view class="detail-top__count">
+        <view class="detail-top__count-item">
+          <text class="detail-top__like">{{likeCount}}</text>
+          喜欢
+        </view>
+        <view class="detail-top__count-item">
+          <text class="detail-top__review">{{reviewCount}}</text>
+          条评论
+        </view>
+      </view>
+    </view>
+    <image class="detail-top__image" src="{{image}}" catchtap="onImageTap" data-src="{{image}}"></image>
+  </view>
+  <view class="detail-middle">
+    <text class="detail-middle__original-title">{{originalTitle}}</text>
+    <view class="detail-middle__info-item">
+      <text class="detail-middle__info-label">评分</text>
+      <view class="detail-middle__info-value">
+        <template is="rating" data="{{rating}}"></template>
+      </view>
+    </view>
+    <view class="detail-middle__info-item">
+      <text class="detail-middle__info-label">导演</text>
+      <view class="detail-middle__info-value">{{director}}</view>
+    </view>
+    <view class="detail-middle__info-item">
+      <text class="detail-middle__info-label">主演</text>
+      <view class="detail-middle__info-value">{{casts}}</view>
+    </view>
+    <view class="detail-middle__info-item">
+      <text class="detail-middle__info-label">类型</text>
+      <view class="detail-middle__info-value">{{genres}}</view>
+    </view>
+  </view>
+  <view class="detail-separator"></view>
+  <view class="detail-summary">
+    <text class="detail-summary__label">剧情简介</text>
+    <view class="detail-summary__value">{{summary}}</view>
+  </view>
+  <view class="detail-separator"></view>
+  <view class="detail-casts">
+    <text class="detail-casts__label">主演</text>
+    <scroll-view class="detail-casts__value" scroll-x="true">
+      <view wx:for="{{castsDetail}}" wx:for-item="performer" wx:key="name" class="detail-casts__performer">
+        <image class="detail-casts__avatar" src="{{performer.avatar}}" catchtap="onImageTap" data-src="{{performer.avatar}}"></image>
+        <view class="detail-casts__name">{{performer.name}}</view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

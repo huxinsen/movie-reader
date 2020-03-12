@@ -1,0 +1,169 @@
+@import '../template/rating/rating.wxss';
+
+/* detail-top */
+
+.detail-top {
+  position: relative;
+  height: 320rpx;
+}
+
+.detail-top__bg-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.detail-top__bg {
+  width: 100%;
+  height: 100%;
+  filter: blur(20px);
+}
+
+.detail-top__inner {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 30rpx;
+  font-size: 14px;
+}
+
+.detail-top__title {
+  margin-bottom: 30rpx;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.detail-top__country-year {
+  margin-bottom: 60rpx;
+  font-size: 14px;
+  color: #fff;
+}
+
+.detail-top__count {
+  display: flex;
+}
+
+.detail-top__count-item {
+  margin-right: 30rpx;
+  color: #333;
+}
+
+.detail-top__like,
+.detail-top__review {
+  margin-right: 15rpx;
+  color: #f00;
+}
+
+.detail-top__image {
+  position: absolute;
+  right: 30rpx;
+  bottom: -60rpx;
+  width: 180rpx;
+  height: 250rpx;
+}
+
+/* detail-middle */
+
+.detail-middle {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+}
+
+.detail-middle__original-title {
+  width: 70%;
+  margin-bottom: 30rpx;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.detail-middle__info-item {
+  display: flex;
+  margin-bottom: 10rpx;
+  font-size: 14px;
+  color: #333;
+}
+
+.detail-middle__info-label {
+  margin-right: 30rpx;
+  white-space: nowrap;
+  color: #666;
+}
+
+/* detail-separator */
+
+.detail-separator {
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+
+/* detail-summary */
+
+.detail-summary {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+  font-size: 14px;
+  color: #333;
+}
+
+.detail-summary__label {
+  margin-bottom: 30rpx;
+  color: #666;
+}
+
+.detail-summary__value {
+  letter-spacing: 2px;
+}
+
+/* detail-casts */
+
+.detail-casts {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+  font-size: 14px;
+  color: #333;
+}
+
+.detail-casts__label {
+  margin-bottom: 30rpx;
+  color: #666;
+}
+
+.detail-casts__value {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.detail-casts__performer {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180rpx;
+  margin-right: 20rpx;
+  font-size: 14px;
+  color: #333;
+}
+
+.detail-casts__performer:last-child {
+  margin-right: 0;
+}
+
+.detail-casts__avatar {
+  width: 180rpx;
+  height: 250rpx;
+  margin-bottom: 10rpx;
+}
+
+.detail-casts__name {
+  text-align: center;
+  white-space: normal;
+}

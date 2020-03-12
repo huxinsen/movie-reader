@@ -1,0 +1,23 @@
+@import '../rating/rating.wxss';
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  width: 200rpx;
+}
+
+.movie__poster {
+  width: 100%;
+  height: 280rpx;
+  margin-bottom: 12rpx;
+  background-color: #eee;
+}
+
+.movie__name {
+  margin-bottom: 6rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+  color: #666;
+}

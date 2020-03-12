@@ -1,0 +1,12 @@
+<template name="rating">
+  <view class="rating">
+    <view class="rating__stars">
+      <image class="rating__star" src="{{rating >= 2 ? '/images/icon/star-full.png' : '/images/icon/star-empty.png'}}"></image>
+      <image class="rating__star" src="{{rating >= 4 ? '/images/icon/star-full.png' : '/images/icon/star-empty.png'}}"></image>
+      <image class="rating__star" src="{{rating >= 6 ? '/images/icon/star-full.png' : '/images/icon/star-empty.png'}}"></image>
+      <image class="rating__star" src="{{rating >= 8 ? '/images/icon/star-full.png' : '/images/icon/star-empty.png'}}"></image>
+      <image class="rating__star" src="{{rating >= 9 ? '/images/icon/star-full.png' : '/images/icon/star-empty.png'}}"></image>
+    </view>
+    <text class="rating__value">{{rating}}</text>
+  </view>
+</template>
